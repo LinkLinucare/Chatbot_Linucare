@@ -2,19 +2,23 @@ Linucare Chatbot
 
 📌 Overview
 
-Linucare's chatbot is designed to assist users by providing instant answers to common questions about Linucare's safety button products and services. The chatbot is integrated with Firebase Firestore to ensure that responses are always up-to-date and relevant.
+Basically, on the side, I am part of the startup Linucare. Our app is primarily used by elderly people, so we aim to make the setup process as easy as possible.
 
-Currently, the chatbot is a web-based solution running locally, but our long-term goal is to integrate it into the Linucare website and mobile app to assist users, particularly elderly individuals, in setting up and using the Linucare app effectively.
+To support this, I have developed a chatbot that provides instant answers to common questions about Linucare's safety button, services, and setup. The chatbot is integrated with Firebase Firestore, ensuring responses are always up-to-date and relevant. It is also designed for future implementation in our app and website, both built on Firebase/Google Cloud.
 
 🚀 Features
 
-Real-time Assistance: Provides information about Linucare products directly from the knowledge base.
+- Real-time Assistance: Provides information about Linucare products directly from the knowledge base.
 
-Easy-to-Use Interface: Built using Streamlit for a simple, chat-like experience.
+- Easy-to-Use Interface: Built using Streamlit for a simple, chat-like experience.
 
-Secure & Efficient: Uses Ollama for local AI model inference, ensuring fast and private responses.
+- Secure & Efficient: Uses Ollama for local AI model inference, ensuring fast and private responses.
 
-Firebase Integration: Syncs product and setup information dynamically.
+- Firebase Integration: Syncs product and setup information dynamically.
+
+
+![2](https://github.com/user-attachments/assets/0a9ef198-3aa5-47ce-9db6-7eb5ba199a29)
+
 
 🔧 Installation & Running the Chatbot
 
@@ -24,61 +28,38 @@ Install Python 3.9+
 
 Install Ollama (for running the AI model locally):
 
-curl -fsSL https://ollama.ai/install.sh | sh
+- curl -fsSL https://ollama.ai/install.sh | sh
 
 Install the required Python dependencies:
 
-pip install -r requirements.txt
+- pip install -r requirements.txt
 
 Run Ollama (ensure the model is available):
 
-ollama serve
+- ollama serve
 
 Start the chatbot locally:
 
-streamlit run app.py
+- streamlit run app.py
 
-🌍 Future Integration into the Linucare Platform
+🌍 Future Integration
 
-Our long-term plan is to integrate this chatbot into both the Linucare website and mobile app, making real-time assistance available 24/7. Given that many of our users are elderly, accessibility and ease of use are top priorities.
+We plan to integrate the chatbot into both the Linucare website and mobile app for real-time support.
 
-✅ How it will work on the Linucare website
+✅ On the Website:
 
-The chatbot will be embedded as a floating chat widget on the website.
+A floating chat widget for troubleshooting and setup guidance and Syncs with Firebase Firestore for the latest FAQs.
 
-Users will be able to ask questions about setting up their safety button, connecting it to their phone, and troubleshooting issues.
+✅ In the Mobile App:
 
-Information will be fetched directly from Firebase Firestore, ensuring that the latest setup guides and FAQs are always available.
-
-✅ How it will work in the Linucare mobile app
-
-The chatbot will be integrated as a support assistant inside the Linucare app.
-
-Users can receive step-by-step guidance on pairing the safety button with their device.
-
-If further help is needed, the chatbot will direct users to Linucare's customer support.
-
-🤝 Why This Matters for Our Users
-
-Linucare's mission is to enhance safety and accessibility for elderly individuals. Many of our users rely on our products to stay safe in their daily lives. However, some may struggle with setting up the app or troubleshooting issues.
-
-By integrating this chatbot, we ensure that:
-
-Help is always available – Users don’t have to wait for customer support.
-
-Guidance is clear and simple – Designed with elderly users in mind.
-
-Information is always up to date – Managed through Firebase Firestore.
+A built-in support assistant for step-by-step setup help and Directs users to customer support if needed.
 
 🛠️ Next Steps
 
-Test the chatbot with real users to refine the experience.
+Test with real users for refinement.
 
-Deploy it on the Linucare website.
+Deploy on the Linucare website.
 
-Build an API for integration with the Linucare mobile app.
+Build an API for mobile app integration.
 
-📩 Feedback & Contributions
-If you have any feedback or want to contribute to this project, feel free to submit a pull request or reach out to the Linucare team!
 
-🚀 Let's make Linucare even more accessible for everyone!
